@@ -773,7 +773,7 @@ body,
 }
 
 .github-markdown-body>*:first-child {
-  margin-top: 0 !important;
+  /* margin-top: 0 !important; */
 }
 
 .github-markdown-body>*:last-child {
@@ -1303,6 +1303,57 @@ body,
   background-color: var(--color-prettylights-syntax-markup-deleted-bg);
 }
 
+.toggle-mode-dark {
+  
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 14px 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 200ms,background 200ms;
+  background: white;
+  color: #000000;
+  box-shadow: 0 0 0 3px #000000 inset;
+  
+  
+}
+
+.toggle-mode-dark:hover{
+  transform: translateY(-2px);
+}
+
+.toggle-mode-light {
+
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  /*  dark mode background */
+  background: var(--color-canvas-default);
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 14px 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 0 0 3px #FFFFFF inset;
+  transition: transform 200ms,background 200ms;
+
+}
+
+.toggle-mode-light:hover{
+  transform: translateY(-2px);
+}
+
+.toggle-mode-btn {
+  margin: 10px;
+  padding: 10px;
+}
+
 </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
@@ -1320,8 +1371,25 @@ body,
 </style>
         
     </head>
-    <body class="vscode-body vscode-light">
+    <body class="vscode-body vscode-light" style="margin: 0;">
+        <script>
+          function toggleModes(target) {
+            if (target.innerText == "Dark") {
+              // in light mode
+              target.innerText = "Light";
+              document.body.className = "vscode-body vscode-dark vsc-initialized"
+              target.className = "toggle-mode-btn toggle-mode-light"
+            }
+            else {
+              // in dark mode
+              target.innerText = "Dark";
+              document.body.className = "vscode-body vscode-light vsc-initialized"
+              target.className = "toggle-mode-btn toggle-mode-dark"
+            }
+          }
+        </script>
         <div class="github-markdown-body github-markdown-auto">
+          <button class="toggle-mode-btn toggle-mode-dark" title="Toggle dark mode" onclick="toggleModes(this)">Dark</button>
             <div class="github-markdown-content"><h1 id="combinatorics">Combinatorics</h1>
 <h2 id="outlines">Outlines</h2>
 <ul>
