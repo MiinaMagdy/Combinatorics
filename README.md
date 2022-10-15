@@ -42,8 +42,9 @@ How many positive divisors does $2000 = 2^4 \cdot 5^3$ have?
 
 $\mathrm{(A)}\,10\quad\mathrm{(B)}\,21\quad\mathrm{(C)}\,31\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,20$
 
-<details>
-  <summary> Solution </summary>
+
+<details> 
+  <summary> Solution ✅ </summary>
 
 Any positive divisor of $2000$ must have the form $2^a \cdot 5^b$, where $a$ and $b$ are integers satisfying $0 \leq a \leq 4, 0 \leq b \leq 3$ There are $5$ possibilities for $a$ and $4$ possibilities for $b$, hence there are $5 \times 4 = 20$ (rule of product) positive divisors of 2000 in all.
 
@@ -64,7 +65,7 @@ Find the rightmost digit of the sum $\sum_{i=1}^{100}(i!)^{2}$
 $\mathrm{(A)}\,0\quad\mathrm{(B)}\,1\quad\mathrm{(C)}\,3\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,9$
 
 <details>
-  <summary> Solution </summary>
+  <summary> Solution ✅ </summary>
 
   If $i$ is less than 5, then $i!$ has a positive rightmost digit, if $i\geq 5$, then $i!$ has a rightmost digit of 0, as does $(i!)^2$. So we only need to worry about i=1-4.
 
@@ -90,7 +91,7 @@ Elodie is putting on a fashion show and has five fabulous outfits for her five f
 $\mathrm{(A)}\,120\quad\mathrm{(B)}\,60\quad\mathrm{(C)}\,720\quad\mathrm{(D)}\,5040\quad\mathrm{(E)}\,24\quad\mathrm{(F)}\,6$
 
 <details>
-  <summary> Solution </summary>
+  <summary> Solution ✅ </summary>
 
 Answer: $\mathrm{(B)}$
 
@@ -114,11 +115,13 @@ A combination, sometimes called a binomial coefficient, is a way of choosing $r$
 $\mathrm{(A)}\,10\quad\mathrm{(B)}\,231\quad\mathrm{(C)}\,253\quad\mathrm{(D)}\,24\quad\mathrm{(E)}\,25\quad\mathrm{(F)}\,120$
 
 <details>
-  <summary> Solution </summary>
+  <summary> Solution ✅ </summary>
 
 Answer: $\mathrm{(C)}$
 
-Note that if each person shakes hands with every other person, then the number of handshakes is maximized. There are $\binom{23}{2} = \frac{(23)(22)}{2} = (23)(11) = 230+23 = \boxed{253}$ ways to choose two people to form a handshake.
+Note that if each person shakes hands with every other person, then the number of handshakes is maximized.
+
+There are $\binom{23}{2} = \frac{(23)(22)}{2} = (23)(11) = 230+23 = \boxed{253}$ ways to choose two people to form a handshake.
 
 </details>
 
@@ -132,7 +135,7 @@ casework is a counting method that involves splitting a problem into several par
 How many positive integers satisfy the equation $x^4 + y < 70$?
 
 <details>
-<summary> Solution </summary>
+<summary> Solution ✅ </summary>
 
 We use casework, based on the value of x.
 
@@ -152,7 +155,7 @@ complementary counting is a counting method where one counts what they don't wan
 How many positive integers less than $100$ are not a multiple of five?
 
 <details>
-<summary> Solution </summary>
+<summary> Solution ✅ </summary>
 
 We use a complementary approach. The total number of positive integers, with no restrictions, is $99$ integers. What we don't want are the multiples of five. These are $5, 10,..., 95$ or $1 \cdot 5, 2 \cdot 5,..., 19 \cdot 5$; it's easy to see that there are $19$ of them. Thus, our answer is is $99-19 = 80$. $\square$
 
@@ -165,7 +168,7 @@ the pigeonhole principle states that if $n+1$ or more pigeons are placed into $n
 #### Example
 1. If a Martian has an infinite number of red, blue, yellow, and black socks in a drawer, how many socks must the Martian pull out of the drawer to guarantee he has a pair? 
    <details>
-    <summary> Solution </summary>
+    <summary> Solution ✅ </summary>
 
     The Martian must pull 5 socks out of the drawer to guarantee he has a pair. In this case the pigeons are the socks he pulls out and the holes are the colors. Thus, if he pulls out 5 socks, the Pigeonhole Principle states that some two of them have the same color. Also, note that it is possible to pull out 4 socks without obtaining a pair.
 
@@ -173,7 +176,7 @@ the pigeonhole principle states that if $n+1$ or more pigeons are placed into $n
 
 2. Suppose $S$ is a set of $n + 1$ integers. Prove that there exist distinct $a, b \in S$ such that $a - b$ is a multiple of $n$.
    <details>
-    <summary> Solution </summary>
+    <summary> Solution ✅ </summary>
 
     Consider the residues of the elements of $S$, modulo $n$. By the Pigeonhole Principle, there exist distinct $a, b \in S$ such that $a \equiv b \pmod n$, as desired.
 
@@ -193,7 +196,7 @@ $\left|\bigcup_{i=1}^n A_i\right|=\sum_{i=1}^n\left|A_i\right| -\sum_{i < j}\lef
 Many states use a sequence of three letters followed by a sequence of three digits as their standard license-plate pattern. Given that each three-letter three-digit arrangement is equally likely, the probability that such a license plate will contain at least one palindrome (a three-letter arrangement or a three-digit arrangement that reads the same left-to-right as it does right-to-left) is $\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
 
 <details>
-<summary> Solution1 </summary>
+<summary> Solution1 ✅ </summary>
 
 Consider the three-digit arrangement, $\overline{aba}$. There are $10$ choices for $a$ and $10$ choices for $b$ (since it is possible for $a=b$), and so the probability of picking the palindrome is $\frac{10 \times 10}{10^3} = \frac 1{10}$. Similarly, there is a $\frac 1{26}$ probability of picking the three-letter palindrome.
 
@@ -204,7 +207,7 @@ $\frac{1}{26}+\frac{1}{10}-\frac{1}{260}=\frac{35}{260}=\frac{7}{52}\quad\Longri
 </details>
 
 <details>
-<summary> Solution2 </summary>
+<summary> Solution2 ✅ </summary>
 
 Using complementary counting, we count all of the license plates that do not have the desired property. In order to not be a palindrome, the first and third characters of each string must be different. Therefore, there are $10\cdot 10\cdot 9$ three digit non-palindromes, and there are $26\cdot 26\cdot 25$ three letter non palindromes. As there are $10^3\cdot 26^3$ total three-letter three-digit arrangements, the probability that a license plate does not have the desired property is $\frac{10\cdot 10\cdot 9\cdot 26\cdot 26\cdot 25}{10^3\cdot 26^3}=\frac{45}{52}$. We subtract this from 1 to get $1-\frac{45}{52}=\frac{7}{52}$ as our probability. Therefore, our answer is $7+52=\boxed{059}$.
 
