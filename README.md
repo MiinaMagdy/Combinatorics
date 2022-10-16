@@ -105,7 +105,7 @@ Since two of the outfits are ruined, we only have three outfits. There are five 
 A combination, sometimes called a binomial coefficient, is a way of choosing $r$ objects from a set of $n$ where the order in which the objects are chosen is irrelevant. We are generally concerned with finding the number of combinations of size $r$ from an original set of size $n$
 
 ### Formulas/Identities
-- ${{n}\choose {r}} = \frac {n!} {r!(n-r)!}$
+- ${ {n}\choose {r}} = \frac {n!} {r!(n-r)!}$
   
 - $\binom{n-1}{r-1}+\binom{n-1}{r}=\binom{n}{r}$      
 
