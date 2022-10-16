@@ -53,14 +53,14 @@ Any positive divisor of $2000$ must have the form $2^a \cdot 5^b$, where $a$ and
 ## Factorial
 
 ### Definition
-The factorial is defined for positive integers as $n!=n \cdot (n-1) \cdots 2 \cdot 1 = \prod_{i=1}^n i$. Alternatively, a recursive definition for the factorial is $n!=n \cdot (n-1)!$.
+The factorial is defined for positive integers as $n!=n \cdot (n-1) \cdots 2 \cdot 1 = \prod{_{i=1}^n} i$. Alternatively, a recursive definition for the factorial is $n!=n \cdot (n-1)!$.
 
 base case $n=0$ is defined as $0!=1$.
 
 The factorial is used in the definitions of **combinations** and **permutations**, as $n!$ is the number of ways to order $n$ distinct objects
 
 ### Example
-Find the rightmost digit of the sum $\sum_{i=1}^{100}(i!)^{2}$
+Find the rightmost digit of the sum $\sum{_{i=1}^{100}}(i!)^{2}$
 
 $\mathrm{(A)}\,0\quad\mathrm{(B)}\,1\quad\mathrm{(C)}\,3\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,9$
 
