@@ -190,7 +190,7 @@ The Principle of Inclusion-Exclusion (abbreviated PIE) provides an organized met
 ### Statement
 If $(A_i)_{1\leq i\leq n}$ are finite sets, then:
 
-$\left|\bigcup_{i=1}^n A_i\right|=\sum_{i=1}^n\left|A_i\right| -\sum_{i < j}\left|A_i\cap A_j\right| +\sum_{i<j<k}\left|A_i\cap A_j\cap A_k\right|-\cdots\ +(-1)^{n-1} \left|A_1\cap\cdots\cap A_n\right|{}$.
+![6039dd90047926228f5d2012a689ffc3e4d2c0d3](https://user-images.githubusercontent.com/71466151/196012662-9049c95e-3ac6-4a8f-acfa-78a1d15f2c7c.png)
 
 ### Example
 Many states use a sequence of three letters followed by a sequence of three digits as their standard license-plate pattern. Given that each three-letter three-digit arrangement is equally likely, the probability that such a license plate will contain at least one palindrome (a three-letter arrangement or a three-digit arrangement that reads the same left-to-right as it does right-to-left) is $\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
