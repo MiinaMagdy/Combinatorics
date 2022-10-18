@@ -231,7 +231,7 @@ ${\displaystyle {\binom {n-1}{k-1}}={\binom {10-1}{4-1}}={\binom {9}{3}}=84.}$
 ### Theorem two
 For any pair of positive integers n and k, the number of k-tuples of non-negative integers whose sum is n is equal to the number of multisets of cardinality n taken from a set of size k, or equivalently, the number of multisets of cardinality k − 1 taken from a set of size n + 1.
 
-For example, if n = 10 and k = 4, the theorem gives the number of solutions to x1 + x2 + x3 + x4 = 10 (with x1, x2, x3, x4 {\displaystyle \geq 0}{\displaystyle \geq 0} ) as:
+For example, if n = 10 and k = 4, the theorem gives the number of solutions to x1 + x2 + x3 + x4 = 10 (with x1, x2, x3, x4 ${\displaystyle \geq 0}$ ) as:
 
 ${\displaystyle {\binom {n+k-1}{k-1}}={\binom {10+4-1}{4-1}}={\binom {13}{3}}=286}$
 
