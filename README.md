@@ -13,7 +13,7 @@
   - [Permutation with Repetition](#permutation-with-repetition)
   - [stars and bars](#stars-and-bars)
   - [Derangement](#derangement)
-  - [Resources](#resources)
+  - [Resources & Session](#resources)
 
 ## Basic Rules
 - [Sum Rule](https://brilliant.org/wiki/rule-of-sum/)
@@ -172,6 +172,11 @@ the pigeonhole principle states that if $n+1$ or more pigeons are placed into $n
 The Principle of Inclusion-Exclusion (abbreviated PIE) provides an organized method/formula to find the number of elements in the union of a given group of sets, the size of each set, and the size of all possible intersections among the sets
 
 ### Statement
+
+for the sets A, B and C is given by
+
+${\displaystyle |A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|}$
+
 If $(A_i)_{1\leq i\leq n}$ are finite sets, then:
 
 ![6039dd90047926228f5d2012a689ffc3e4d2c0d3](https://user-images.githubusercontent.com/71466151/196012662-9049c95e-3ac6-4a8f-acfa-78a1d15f2c7c.png)
@@ -211,8 +216,8 @@ what is the number of permutations of the word "MISSISSIPPI" with 4 I's, 4 S's, 
 <details>
   <summary> Solution ✅ </summary>
 
-  Answer: $ \frac{11!}{4! \cdot 4! \cdot 2! \cdot 1!} = 34650$
-
+$$ \frac{11!}{ 4! \cdot 4! \cdot 2! \cdot 1!} = 34650 $$  
+  
 </details>
 
 ## stars and bars
@@ -221,21 +226,21 @@ For any pair of positive integers n and k, the number of k-tuples of positive in
 
 For example, if n = 10 and k = 4, the theorem gives the number of solutions to x1 + x2 + x3 + x4 = 10 (with x1, x2, x3, x4 > 0) as the binomial coefficient
 
-${\displaystyle {\binom {n-1}{k-1}}={\binom {10-1}{4-1}}={\binom {9}{3}}=84.}{\displaystyle {\binom {n-1}{k-1}}={\binom {10-1}{4-1}}={\binom {9}{3}}=84.}$
+${\displaystyle {\binom {n-1}{k-1}}={\binom {10-1}{4-1}}={\binom {9}{3}}=84.}$
 
 ### Theorem two
 For any pair of positive integers n and k, the number of k-tuples of non-negative integers whose sum is n is equal to the number of multisets of cardinality n taken from a set of size k, or equivalently, the number of multisets of cardinality k − 1 taken from a set of size n + 1.
 
 For example, if n = 10 and k = 4, the theorem gives the number of solutions to x1 + x2 + x3 + x4 = 10 (with x1, x2, x3, x4 {\displaystyle \geq 0}{\displaystyle \geq 0} ) as:
 
-${\displaystyle {\binom {n+k-1}{k-1}}={\binom {10+4-1}{4-1}}={\binom {13}{3}}=286}{\displaystyle {\binom {n+k-1}{k-1}}={\binom {10+4-1}{4-1}}={\binom {13}{3}}=286}$
+${\displaystyle {\binom {n+k-1}{k-1}}={\binom {10+4-1}{4-1}}={\binom {13}{3}}=286}$
 
 ## Derangement
 ### Definition
 A derangement is a permutation with no fixed points. That is, a derangement of a set leaves no element in its original place. For example, the derangements of $\{1,2,3\}$ are $\{2, 3, 1\}$ and $\{3, 1, 2\}$, but $\{3,2, 1\}$ is not a derangement of $\{1,2,3\}$ because 2 is a fixed point.
 
 ### Formula
-\[!n = n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}.\]
+$$ !n = n! \sum_{k=0}^{n} \frac{(-1)^k}{k!} $$
 
 
 ## Resources
@@ -246,3 +251,4 @@ A derangement is a permutation with no fixed points. That is, a derangement of a
 - [Probability](https://brilliant.org/wiki/probability)
 - [AoPS Combinatorics](https://artofproblemsolving.com/wiki/index.php/Combinatorics)
 - [AoPS Alcumus](https://artofproblemsolving.com/alcumus)
+- [Session](https://drive.google.com/file/d/1pRaOvqHUNZHJmjHqP3rCLzzsmbpthOGy/view?usp=sharing)
