@@ -23,8 +23,9 @@
 ### Example
 How many positive divisors does $2000 = 2^4 \cdot 5^3$ have?
 
-$\mathrm{(A)}\,10\quad\mathrm{(B)}\,21\quad\mathrm{(C)}\,31\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,20$
-
+```math
+\mathrm{(A)}\,10\quad\mathrm{(B)}\,21\quad\mathrm{(C)}\,31\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,20
+```
 
 <details> 
   <summary> Solution ✅ </summary>
@@ -36,14 +37,14 @@ Any positive divisor of $2000$ must have the form $2^a \cdot 5^b$, where $a$ and
 ## Factorial
 
 ### Definition
-The factorial is defined for positive integers as $n!=n \cdot (n-1) \cdots 2 \cdot 1 = \prod_{i=1}^n i$. Alternatively, a recursive definition for the factorial is $n!=n \cdot (n-1)!$.
+The factorial is defined for positive integers as $n!=n \cdot (n-1) \cdots 2 \cdot 1 = \prod{_{i=1}^n} i$. Alternatively, a recursive definition for the factorial is $n!=n \cdot (n-1)!$.
 
 base case $n=0$ is defined as $0!=1$.
 
 The factorial is used in the definitions of **combinations** and **permutations**, as $n!$ is the number of ways to order $n$ distinct objects
 
 ### Example
-Find the rightmost digit of the sum $\sum_{i=1}^{100}(i!)^{2}$
+Find the rightmost digit of the sum $\sum{_{i=1}^{100}}(i!)^{2}$
 
 $\mathrm{(A)}\,0\quad\mathrm{(B)}\,1\quad\mathrm{(C)}\,3\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,9$
 
@@ -173,7 +174,7 @@ The Principle of Inclusion-Exclusion (abbreviated PIE) provides an organized met
 ### Statement
 If $(A_i)_{1\leq i\leq n}$ are finite sets, then:
 
-$\left|\bigcup_{i=1}^n A_i\right|=\sum_{i=1}^n\left|A_i\right| -\sum_{i < j}\left|A_i\cap A_j\right| +\sum_{i<j<k}\left|A_i\cap A_j\cap A_k\right|-\cdots\ +(-1)^{n-1} \left|A_1\cap\cdots\cap A_n\right|{}$.
+![6039dd90047926228f5d2012a689ffc3e4d2c0d3](https://user-images.githubusercontent.com/71466151/196012662-9049c95e-3ac6-4a8f-acfa-78a1d15f2c7c.png)
 
 ### Example
 Many states use a sequence of three letters followed by a sequence of three digits as their standard license-plate pattern. Given that each three-letter three-digit arrangement is equally likely, the probability that such a license plate will contain at least one palindrome (a three-letter arrangement or a three-digit arrangement that reads the same left-to-right as it does right-to-left) is $\dfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n.$
