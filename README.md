@@ -23,9 +23,8 @@
 ### Example
 How many positive divisors does $2000 = 2^4 \cdot 5^3$ have?
 
-```math
-\mathrm{(A)}\,10\quad\mathrm{(B)}\,21\quad\mathrm{(C)}\,31\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,20
-```
+
+$\mathrm{(A)}\,10\quad\mathrm{(B)}\,21\quad\mathrm{(C)}\,31\quad\mathrm{(D)}\,5\quad\mathrm{(E)}\,7\quad\mathrm{(F)}\,20$
 
 <details> 
   <summary> Solution ✅ </summary>
