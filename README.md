@@ -1,35 +1,18 @@
 # Combinatorics
 
 ## Outlines
-- [Combinatorics](#combinatorics)
-  - [Outlines](#outlines)
   - [Basic Rules](#basic-rules)
-    - [Example](#example)
   - [Factorial](#factorial)
-    - [Definition](#definition)
-    - [Example](#example-1)
   - [Permutations](#permutations)
-    - [Definition](#definition-1)
-    - [Formula](#formula)
-    - [Example](#example-2)
   - [Combinations](#combinations)
-    - [Definition](#definition-2)
-    - [Formulas/Identities](#formulasidentities)
-    - [Example](#example-3)
   - [Techniques](#techniques)
     - [Casework](#casework)
-      - [Definition](#definition-3)
-      - [Example](#example-4)
     - [Complementary counting](#complementary-counting)
-      - [Definition](#definition-4)
-      - [Example](#example-5)
     - [Pigeonhole Principle](#pigeonhole-principle)
-      - [Definition](#definition-5)
-      - [Example](#example-6)
   - [Inclusion-Exclusion Principle](#inclusion-exclusion-principle)
-    - [Definition](#definition-6)
-    - [Statement](#statement)
-    - [Example](#example-7)
+  - [Permutation with Repetition](#permutation-with-repetition)
+  - [stars and bars](#stars-and-bars)
+  - [Derangement](#derangement)
   - [Resources](#resources)
 
 ## Basic Rules
@@ -213,6 +196,47 @@ Using complementary counting, we count all of the license plates that do not hav
 
 </details>
 
+## Permutation with Repetition
+### Definition
+A permutation with repetition is a permutation where the same element can appear more than once
+
+### Formula
+
+$$ \frac{n!}{ {n_{1}}! \cdot {n_{2}}! \cdots {n_{k}}!} $$
+
+### Example
+what is the number of permutations of the word "MISSISSIPPI" with 4 I's, 4 S's, 2 P's, and 1 M's?
+
+<details>
+  <summary> Solution ✅ </summary>
+
+  Answer: $ \frac{11!}{4! \cdot 4! \cdot 2! \cdot 1!} = 34650$
+
+</details>
+
+## stars and bars
+### Theorem one
+For any pair of positive integers n and k, the number of k-tuples of positive integers whose sum is n is equal to the number of (k − 1)-element subsets of a set with n − 1 elements.
+
+For example, if n = 10 and k = 4, the theorem gives the number of solutions to x1 + x2 + x3 + x4 = 10 (with x1, x2, x3, x4 > 0) as the binomial coefficient
+
+${\displaystyle {\binom {n-1}{k-1}}={\binom {10-1}{4-1}}={\binom {9}{3}}=84.}{\displaystyle {\binom {n-1}{k-1}}={\binom {10-1}{4-1}}={\binom {9}{3}}=84.}$
+
+### Theorem two
+For any pair of positive integers n and k, the number of k-tuples of non-negative integers whose sum is n is equal to the number of multisets of cardinality n taken from a set of size k, or equivalently, the number of multisets of cardinality k − 1 taken from a set of size n + 1.
+
+For example, if n = 10 and k = 4, the theorem gives the number of solutions to x1 + x2 + x3 + x4 = 10 (with x1, x2, x3, x4 {\displaystyle \geq 0}{\displaystyle \geq 0} ) as:
+
+${\displaystyle {\binom {n+k-1}{k-1}}={\binom {10+4-1}{4-1}}={\binom {13}{3}}=286}{\displaystyle {\binom {n+k-1}{k-1}}={\binom {10+4-1}{4-1}}={\binom {13}{3}}=286}$
+
+## Derangement
+### Definition
+A derangement is a permutation with no fixed points. That is, a derangement of a set leaves no element in its original place. For example, the derangements of $\{1,2,3\}$ are $\{2, 3, 1\}$ and $\{3, 1, 2\}$, but $\{3,2, 1\}$ is not a derangement of $\{1,2,3\}$ because 2 is a fixed point.
+
+### Formula
+\[!n = n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}.\]
+
+
 ## Resources
 - [Combinatorics](https://brilliant.org/wiki/combinatorics/)
 - [Permutations](https://brilliant.org/wiki/permutations/)
@@ -221,19 +245,3 @@ Using complementary counting, we count all of the license plates that do not hav
 - [Probability](https://brilliant.org/wiki/probability)
 - [AoPS Combinatorics](https://artofproblemsolving.com/wiki/index.php/Combinatorics)
 - [AoPS Alcumus](https://artofproblemsolving.com/alcumus)
-
-
-<!--
-    Topics to consider
-    - https://brilliant.org/wiki/derangements/
-    - stars and bars
-    - permutation with repetition
-    - inclusion-exclusion principle
-    - pigeonhole principle
-    - 
-
-    Problems to consider
-    - in recurrence relation: https://codeforces.com/contest/1739/problem/C
-    - 
-
--->
